@@ -20,7 +20,7 @@
         "ext-xml": "*",
         "symfony/dependency-injection": "^4.4|^5.0|^6.0|^7.0",
         "symfony/http-kernel": "^4.4|^5.0|^6.0|^7.0",
-        "symfony/security-acl": "^3.0",
+        "symfony/security-acl": "dev-symfony7",
         "symfony/security-bundle": "^4.4|^5.0|^6.0|^7.0"
     },
     "require-dev": {
@@ -35,6 +35,12 @@
     "suggest": {
         "doctrine/doctrine-bundle": "To use the default dbal configuration"
     },
+    "repositories" : [
+        {
+            "type": "git",
+            "url": "https://github.com/core23/security-acl"
+        }
+    ],
     "autoload": {
         "psr-4": { "Symfony\\Bundle\\AclBundle\\": "src/" }
     },
